@@ -1,0 +1,26 @@
+{
+  "name": "event-tracker",
+  "version": "1.0.0",
+  "description": "Event schedule aggregator",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "generate:static": "npm run build && node dist/scripts/generate-static.js",
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node server.ts",
+    "dev:simple": "ts-node server.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0",
+    "express": "^4.19.0",
+    "puppeteer": "^24.39.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

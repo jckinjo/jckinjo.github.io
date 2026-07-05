@@ -1,5 +1,5 @@
-node_modules
-package.json
-package-lock.json
-dist
-*.swp
+node_modules/
+dist/
+site/
+.env
+.DS_Store
