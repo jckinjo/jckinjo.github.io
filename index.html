@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Tracker</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3350;
+      --text: #e8eaf6;
+      --text-muted: #7b82a8;
+      --accent: #6c63ff;
+      --accent-hover: #857dff;
+      --green: #00c896;
+      --radius: 14px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.4);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+      min-height: 100vh;
+    }
+
+    /* ── Header ─────────────────────────────── */
+    header {
+      background: linear-gradient(135deg, #1a1d27 0%, #12142a 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-title h1 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .header-title .emoji { font-size: 1.5rem; }
+
+    .header-actions { display: flex; gap: 10px; align-items: center; }
+
+    .scraped-at {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    /* ── Buttons ─────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: all 0.15s ease;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover { color: var(--text); border-color: var(--text-muted); }
+
+    .btn-cal {
+      background: #1a73e8;
+      color: #fff;
+      font-size: 0.78rem;
+      padding: 6px 12px;
+    }
+    .btn-cal:hover { background: #1557b0; }
+
+    .btn-link {
+      background: var(--surface2);
+      color: var(--text);
+      font-size: 0.78rem;
+      padding: 6px 12px;
+    }
+    .btn-link:hover { background: var(--border); }
+
+    .btn-visit {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      font-size: 0.8rem;
+      padding: 7px 14px;
+    }
+    .btn-visit:hover { background: var(--accent); color: #fff; }
+
+    /* ── Layout ─────────────────────────────── */
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px 60px;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      padding-left: 4px;
+    }
+
+    /* ── Source filter pills ─────────────────── */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 13px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1.5px solid transparent;
+      transition: all 0.15s ease;
+      background: var(--surface2);
+      color: var(--text-muted);
+    }
+    .pill:hover { color: var(--text); border-color: var(--border); }
+    .pill.active { color: #fff; border-color: transparent; }
+    .pill-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ── Event cards ─────────────────────────── */
+    #event-list { display: flex; flex-direction: column; gap: 12px; }
+
+    .event-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      animation: fadeIn 0.3s ease both;
+    }
+    .event-card:hover {
+      border-color: #3a3f6a;
+      box-shadow: var(--shadow);
+    }
+    /* 関東エリアの微妙なハイライト */
+    .event-card.kanto {
+      border-left: 3px solid #4f8ef7;
+      padding-left: 17px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Date column */
+    .card-date {
+      min-width: 56px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .card-date .month {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+    }
+    .card-date .day {
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--text);
+    }
+    .card-date .weekday {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .card-date.no-date .day { font-size: 1rem; color: var(--text-muted); }
+
+    /* Divider */
+    .card-divider {
+      width: 1px;
+      background: var(--border);
+      align-self: stretch;
+      flex-shrink: 0;
+    }
+
+    /* Info column */
+    .card-info { flex: 1; min-width: 0; }
+
+    .card-source-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: #fff;
+      margin-bottom: 6px;
+      letter-spacing: 0.04em;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .card-meta span { display: flex; align-items: center; gap: 4px; }
+    .map-link { color: var(--text-muted); text-decoration: underline dotted; }
+    .map-link:hover { color: var(--text); }
+
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    /* Placeholder card */
+    .event-card.placeholder {
+      border-style: dashed;
+      opacity: 0.75;
+    }
+    .event-card.placeholder:hover { opacity: 1; }
+    .placeholder-text {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* ── States ─────────────────────────────── */
+    .state-box {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+    }
+    .state-box .icon { font-size: 3rem; margin-bottom: 12px; }
+    .state-box p { font-size: 0.9rem; margin-top: 8px; }
+
+    .spinner {
+      width: 40px; height: 40px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin: 0 auto 16px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Responsive ─────────────────────────── */
+    @media (max-width: 600px) {
+      header { padding: 14px 16px; }
+      .header-title h1 { font-size: 1.1rem; }
+      .scraped-at { display: none; }
+      .event-card { flex-direction: column; gap: 12px; }
+      .card-divider { display: none; }
+      .card-date { display: flex; gap: 8px; align-items: baseline; }
+      .card-date .month { font-size: 0.8rem; }
+      .card-date .day { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-title">
+    <span class="emoji">📅</span>
+    <h1>Event Tracker</h1>
+  </div>
+  <div class="header-actions">
+    <span class="scraped-at" id="scraped-at"></span>
+    <button class="btn btn-primary" id="refresh-btn" onclick="loadEvents(true)">
+      ↻ 更新
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="section-title">SOURCE FILTER</div>
+  <div class="filters" id="filters"></div>
+
+  <div class="section-title">UPCOMING EVENTS</div>
+  <div id="event-list">
+    <div class="state-box">
+      <div class="spinner"></div>
+      <p>イベント情報を取得中…</p>
+    </div>
+  </div>
+</main>
+
+<script>
+// 関東エリア判定
+const KANTO_KEYWORDS = [
+  '東京', 'Tokyo', 'TOKYO', '渋谷', '新宿', '池袋', '銀座', '恵比寿', '六本木', '上野',
+  '秋葉原', '品川', '目黒', '中野', '吉祥寺', '下北沢', '高円寺', '原宿', '表参道',
+  '青山', '赤坂', '麻布', '代官山', '三軒茶屋', '浅草', '錦糸町', '板橋', '練馬',
+  '大手町', '丸の内', '有楽町', '日比谷', '神田', '秋葉原', '御茶ノ水', '飯田橋',
+  '新橋', '浜松町', '天王洲', '豊洲', '清澄', '両国', '亀戸', '葛西', '府中', '立川',
+  '神奈川', '横浜', '川崎', '相模原',
+  '埼玉', 'さいたま',
+  '千葉',
+  '茨城', '栃木', '群馬',
+];
+
+function isKanto(event) {
+  const haystack = [event.venue, event.location, event.title].filter(Boolean).join(' ');
+  return KANTO_KEYWORDS.some(kw => haystack.includes(kw));
+}
+let allData = { upcoming: [], past: [] };
+let activeFilters = new Set();
+
+async function fetchEventData(forceRefresh = false) {
+  const cacheBust = forceRefresh ? `?t=${Date.now()}` : '';
+  const candidates = [
+    `api/events.json${cacheBust}`,
+    `/api/events${forceRefresh ? '?refresh=1' : ''}`,
+  ];
+  let lastError = null;
+
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, { cache: forceRefresh ? 'no-store' : 'default' });
+      if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+      const json = await res.json();
+      if (!json.ok) throw new Error(json.error || 'Unknown error');
+      return json;
+    } catch (err) {
+      lastError = err;
+    }
+  }
+
+  throw lastError || new Error('イベント情報を取得できませんでした');
+}
+
+async function loadEvents(forceRefresh = false) {
+  const btn = document.getElementById('refresh-btn');
+  btn.disabled = true;
+  btn.textContent = '取得中…';
+
+  document.getElementById('event-list').innerHTML = `
+    <div class="state-box">
+      <div class="spinner"></div>
+      <p>イベント情報を取得中…（初回は10〜20秒かかります）</p>
+    </div>`;
+
+  try {
+    const json = await fetchEventData(forceRefresh);
+    allData = json;
+
+    // Build filter pills from sources
+    buildFilters(json.upcoming);
+
+    // Render
+    render();
+
+    if (json.scrapedAt) {
+      const d = new Date(json.scrapedAt);
+      document.getElementById('scraped-at').textContent =
+        `最終更新: ${d.getHours()}:${String(d.getMinutes()).padStart(2,'0')}`;
+    }
+  } catch (err) {
+    document.getElementById('event-list').innerHTML = `
+      <div class="state-box">
+        <div class="icon">⚠️</div>
+        <strong>取得エラー</strong>
+        <p>${err.message}</p>
+      </div>`;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '↻ 更新';
+  }
+}
+
+function buildFilters(events) {
+  const sources = new Map();
+  events.forEach(c => {
+    if (!sources.has(c.source)) sources.set(c.source, c.sourceColor);
+  });
+
+  const container = document.getElementById('filters');
+  container.innerHTML = '';
+
+  // "All" pill
+  const allPill = document.createElement('div');
+  allPill.className = 'pill active';
+  allPill.dataset.source = '__all__';
+  allPill.innerHTML = `<span class="pill-dot" style="background:#6c63ff"></span> すべて`;
+  allPill.onclick = () => toggleFilter('__all__', allPill);
+  container.appendChild(allPill);
+
+  sources.forEach((color, name) => {
+    const pill = document.createElement('div');
+    pill.className = 'pill';
+    pill.dataset.source = name;
+    pill.innerHTML = `<span class="pill-dot" style="background:${color}"></span> ${name}`;
+    pill.onclick = () => toggleFilter(name, pill);
+    container.appendChild(pill);
+  });
+}
+
+function toggleFilter(source, el) {
+  const pills = document.querySelectorAll('.pill');
+
+  if (source === '__all__') {
+    activeFilters.clear();
+    pills.forEach(p => p.classList.toggle('active', p.dataset.source === '__all__'));
+    pills.forEach(p => { if (p.dataset.source !== '__all__') p.style.background = ''; });
+  } else {
+    document.querySelector('[data-source="__all__"]').classList.remove('active');
+    if (activeFilters.has(source)) {
+      activeFilters.delete(source);
+      el.classList.remove('active');
+      el.style.background = '';
+    } else {
+      activeFilters.add(source);
+      el.classList.add('active');
+      el.style.background = getSourceColor(source);
+    }
+    if (activeFilters.size === 0) {
+      document.querySelector('[data-source="__all__"]').classList.add('active');
+    }
+  }
+
+  render();
+}
+
+function getSourceColor(source) {
+  const c = allData.upcoming.find(c => c.source === source);
+  return c ? c.sourceColor : '#6c63ff';
+}
+
+function render() {
+  const list = document.getElementById('event-list');
+  let events = allData.upcoming;
+
+  if (activeFilters.size > 0) {
+    events = events.filter(c => activeFilters.has(c.source));
+  }
+
+  if (events.length === 0) {
+    list.innerHTML = `<div class="state-box"><div class="icon">📅</div><p>イベント情報が見つかりませんでした</p></div>`;
+    return;
+  }
+
+  list.innerHTML = events.map(buildCard).join('');
+}
+
+function buildCard(c) {
+  const dateHTML = buildDateHTML(c.date);
+  const metaHTML = buildMeta(c);
+  const actionsHTML = buildActions(c);
+  const kanto = isKanto(c);
+
+  if (c.isPlaceholder) {
+    return `
+      <div class="event-card placeholder">
+        <div class="card-date no-date"><div class="day">—</div></div>
+        <div class="card-divider"></div>
+        <div class="card-info">
+          <span class="card-source-badge" style="background:${c.sourceColor}">${c.source}</span>
+          <div class="card-title">${c.source}</div>
+          <div class="placeholder-text">イベント情報の自動取得ができませんでした。サイトで確認してください。</div>
+          <div class="card-actions" style="margin-top:10px">
+            <a class="btn btn-visit" href="${c.sourceUrl}" target="_blank" rel="noopener">
+              🔗 サイトを開く
+            </a>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  return `
+    <div class="event-card${kanto ? ' kanto' : ''}">
+      <div class="card-date">${dateHTML}</div>
+      <div class="card-divider"></div>
+      <div class="card-info">
+        <span class="card-source-badge" style="background:${c.sourceColor}">${c.source}</span>
+        <div class="card-title">${esc(c.title || 'イベント情報')}</div>
+        ${metaHTML}
+        <div class="card-actions">${actionsHTML}</div>
+      </div>
+    </div>`;
+}
+
+function buildDateHTML(date) {
+  if (!date) return `<div class="month">—</div><div class="day">?</div>`;
+  const d = new Date(date);
+  const parts = new Intl.DateTimeFormat('ja-JP', {
+    timeZone: 'Asia/Tokyo',
+    month: 'numeric',
+    day: 'numeric',
+    weekday: 'short',
+  }).formatToParts(d);
+  const getPart = type => parts.find(p => p.type === type)?.value || '';
+  return `
+    <div class="month">${getPart('month')}月</div>
+    <div class="day">${getPart('day')}</div>
+    <div class="weekday">${getPart('weekday')}曜</div>`;
+}
+
+function buildMeta(c) {
+  const parts = [];
+  if (c.time) parts.push(`<span>🕐 ${esc(c.time)}</span>`);
+  if (c.venue) {
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(c.venue)}`;
+    parts.push(`<span>📍 <a href="${mapsUrl}" target="_blank" rel="noopener" class="map-link">${esc(c.venue)}</a></span>`);
+  }
+  if (c.location) parts.push(`<span>🗾 ${esc(c.location)}</span>`);
+  if (c.price) parts.push(`<span>💴 ${esc(c.price)}</span>`);
+  if (c.details) parts.push(`<span>🏷️ ${esc(c.details)}</span>`);
+  if (parts.length === 0) return '';
+  return `<div class="card-meta">${parts.join('')}</div>`;
+}
+
+function buildActions(c) {
+  const actions = [];
+
+  actions.push(`<a class="btn btn-link" href="${c.url}" target="_blank" rel="noopener">🔗 詳細を見る</a>`);
+
+  if (c.calendarUrl) {
+    actions.push(`<a class="btn btn-cal" href="${c.calendarUrl}" target="_blank" rel="noopener">📅 Googleカレンダーに追加</a>`);
+  }
+
+  return actions.join('');
+}
+
+function esc(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+// Apply active pill colors after render
+document.querySelectorAll('.pill.active').forEach(p => {
+  const src = p.dataset.source;
+  if (src && src !== '__all__') p.style.background = getSourceColor(src);
+});
+
+// Initial load
+loadEvents();
+</script>
+</body>
+</html>

@@ -35,4 +35,6 @@ npm run generate:static
 ```
 
 The static site is generated under `site/`, including `api/events.json`.
-GitHub Actions deploys this folder to GitHub Pages.
+GitHub Pages serves the repository root, so `index.html` and `api/events.json`
+are committed at the root. GitHub Actions refreshes those generated files on
+push, manual runs, and a daily schedule.
