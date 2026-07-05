@@ -129,7 +129,7 @@
       "price": "¥1,200",
       "venue": "Shibakoen Station",
       "location": "4-8-14 Shibakoen, Minato-ku,, Tokyo, JP",
-      "details": "10人参加予定",
+      "details": "12人参加予定",
       "url": "https://www.meetup.com/tokyo-expat-social-club/events/314843977/",
       "source": "Tokyo Expat Social Club",
       "sourceUrl": "https://www.meetup.com/tokyo-expat-social-club/",
@@ -146,7 +146,7 @@
       "price": null,
       "venue": "Yoyogi park (Harajuku Gate) 代々木公園（集合場所：原宿門）",
       "location": "Yoyogi park, Tokyo 代々木公園東京都, Tokyo, JP",
-      "details": "35人参加予定",
+      "details": "37人参加予定",
       "url": "https://www.meetup.com/chillruncrew-tokyo/events/310387601/",
       "source": "Chill Run Crew Tokyo",
       "sourceUrl": "https://www.meetup.com/chillruncrew-tokyo/",
@@ -179,7 +179,7 @@
       "price": "¥1,200",
       "venue": "Odaiba Kaihin Kouen Station",
       "location": "Odaiba, Tokyo, JP",
-      "details": "35人参加予定",
+      "details": "37人参加予定",
       "url": "https://www.meetup.com/tokyo-expat-social-club/events/314277109/",
       "source": "Tokyo Expat Social Club",
       "sourceUrl": "https://www.meetup.com/tokyo-expat-social-club/",
@@ -245,7 +245,7 @@
       "price": null,
       "venue": "Yoyogi park (Harajuku Gate) 代々木公園（集合場所：原宿門）",
       "location": "Yoyogi park, Tokyo 代々木公園東京都, Tokyo, JP",
-      "details": "2人参加予定",
+      "details": "3人参加予定",
       "url": "https://www.meetup.com/chillruncrew-tokyo/events/310387602/",
       "source": "Chill Run Crew Tokyo",
       "sourceUrl": "https://www.meetup.com/chillruncrew-tokyo/",
@@ -950,5 +950,5 @@
     }
   ],
   "past": [],
-  "scrapedAt": "2026-07-05T07:59:11.922Z"
+  "scrapedAt": "2026-07-05T21:53:24.416Z"
 }
