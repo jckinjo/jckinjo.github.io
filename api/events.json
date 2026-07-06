@@ -868,6 +868,22 @@
       "details": null
     },
     {
+      "id": "DEPAPEPE-1",
+      "title": "「DEPAPEPE ONEMAN LIVE “DEPAPEPE”」",
+      "date": "2026-10-01T15:00:00.000Z",
+      "dateDisplay": "",
+      "time": "18:30",
+      "price": "9500円",
+      "venue": null,
+      "location": null,
+      "url": "https://rainbow-e.co.jp/depapepe/live/4840/",
+      "source": "DEPAPEPE",
+      "sourceUrl": "https://rainbow-e.co.jp/depapepe/live/",
+      "sourceColor": "#e67e22",
+      "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E3%80%8CDEPAPEPE%20ONEMAN%20LIVE%20%E2%80%9CDEPAPEPE%E2%80%9D%E3%80%8D&dates=20261002T183000/20261002T203000&details=DEPAPEPE%0Ahttps%3A%2F%2Frainbow-e.co.jp%2Fdepapepe%2Flive%2F4840%2F&location=&ctz=Asia%2FTokyo",
+      "details": null
+    },
+    {
       "id": "しんゆりフェスティバル・マルシェ-2",
       "title": "しんゆりフェスティバル・マルシェ vol.68",
       "date": "2026-10-09T01:00:00.000Z",
@@ -1155,22 +1171,6 @@
       "details": null
     },
     {
-      "id": "DEPAPEPE-1",
-      "title": "「DEPAPEPE ONEMAN LIVE “DEPAPEPE”」",
-      "date": null,
-      "dateDisplay": "",
-      "time": null,
-      "price": null,
-      "venue": null,
-      "location": null,
-      "url": "https://rainbow-e.co.jp/depapepe/live/4840/",
-      "source": "DEPAPEPE",
-      "sourceUrl": "https://rainbow-e.co.jp/depapepe/live/",
-      "sourceColor": "#e67e22",
-      "calendarUrl": null,
-      "details": null
-    },
-    {
       "id": "DEPAPEPE-4",
       "title": "「三浦★順2026」",
       "date": null,
@@ -1188,5 +1188,5 @@
     }
   ],
   "past": [],
-  "scrapedAt": "2026-07-06T05:18:01.711Z"
+  "scrapedAt": "2026-07-06T05:19:30.900Z"
 }
