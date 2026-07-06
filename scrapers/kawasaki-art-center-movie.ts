@@ -52,12 +52,14 @@ function detailsFrom(showtime: string | null, caution: string | null): string | 
 
 function targetWeekendBounds(today: Date): { start: Date; end: Date } {
   const start = new Date(today);
+  start.setHours(0, 0, 0, 0);
   const day = today.getDay();
-  const daysUntilSaturday = day === 0 ? -1 : day === 6 ? 0 : 6 - day;
-  start.setDate(today.getDate() + daysUntilSaturday);
+  const daysUntilSaturday = day === 0 ? 6 : day === 6 ? 0 : 6 - day;
+  start.setDate(start.getDate() + daysUntilSaturday);
 
   const end = new Date(start);
   end.setDate(start.getDate() + 2);
+  end.setHours(0, 0, 0, 0);
   return { start, end };
 }
 

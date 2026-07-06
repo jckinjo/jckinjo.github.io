@@ -12,6 +12,7 @@ Static Event Tracker for concerts, sports, movies, markets, and Meetup groups.
 - バスケットボール日本代表 (SPOCALE)
 - 川崎市アートセンター 映像館
 - しんゆりフェスティバル・マルシェ
+- 庶民のIPO
 - Tokyo Expat Social Club (Meetup)
 - Chill Run Crew Tokyo (Meetup)
 
