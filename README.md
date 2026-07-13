@@ -14,6 +14,7 @@ Static Event Tracker for concerts, sports, movies, markets, and Meetup groups.
 - しんゆりフェスティバル・マルシェ
 - 庶民のIPO
 - 飛地・東京 (Instagram)
+- connpass 人気ランキング
 - Tokyo Expat Social Club (Meetup)
 - Chill Run Crew Tokyo (Meetup)
 
