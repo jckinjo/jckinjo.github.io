@@ -13,6 +13,7 @@ Static Event Tracker for concerts, sports, movies, markets, and Meetup groups.
 - 川崎市アートセンター 映像館
 - しんゆりフェスティバル・マルシェ
 - 庶民のIPO
+- 飛地・東京 (Instagram)
 - Tokyo Expat Social Club (Meetup)
 - Chill Run Crew Tokyo (Meetup)
 

@@ -7,6 +7,7 @@ import * as spocaleBasketballJapan from './spocale-basketball-japan';
 import * as kawasakiArtCenterMovie from './kawasaki-art-center-movie';
 import * as fMarche from './f-marche';
 import * as ipokabu from './ipokabu';
+import * as nowhereTokyo from './nowhere-tokyo';
 import { createMeetupScraper } from './meetup';
 import type { Scraper, ScrapedData, TrackedEvent } from './types';
 
@@ -32,6 +33,7 @@ const scrapers: Scraper[] = [
   kawasakiArtCenterMovie,
   fMarche,
   ipokabu,
+  nowhereTokyo,
   tokyoExpatSocialClub,
   chillRunCrewTokyo,
 ];
