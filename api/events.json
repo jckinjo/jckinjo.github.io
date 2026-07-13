@@ -78,7 +78,7 @@
       "price": "¥1,500",
       "venue": "日比谷公園 噴水広場 (Hibiya Park Fountain Plaza)",
       "location": "日比谷公園 噴水広場 (Hibiya Park Fountain Plaza), 日本、〒100-0012 東京都千代田区日比谷公園１−２, Tokyo, JP",
-      "details": "30人参加予定",
+      "details": "33人参加予定",
       "url": "https://www.meetup.com/tokyo-expat-social-club/events/314890392/",
       "source": "Tokyo Expat Social Club",
       "sourceUrl": "https://www.meetup.com/tokyo-expat-social-club/",
@@ -210,7 +210,7 @@
       "date": "2026-07-18T09:30:00.000Z",
       "dateDisplay": "2026.07.18",
       "time": "18:30",
-      "price": "¥1,500",
+      "price": "¥1,200",
       "venue": "Odaiba Kaihin Kouen Station",
       "location": "Odaiba, Tokyo, JP",
       "details": "15人参加予定",
@@ -1221,5 +1221,5 @@
     }
   ],
   "past": [],
-  "scrapedAt": "2026-07-13T04:16:45.314Z"
+  "scrapedAt": "2026-07-13T06:24:12.314Z"
 }
