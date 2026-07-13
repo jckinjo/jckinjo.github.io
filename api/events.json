@@ -61,7 +61,7 @@
       "price": "¥2,500 (includes bowling + shoe rental)",
       "venue": "Hyper lane – Ikebukuro",
       "location": "1 Chome-43-6 Higashiikebukuro, Toshima City, Tokyo 170-0013, Tokyo, JP",
-      "details": "23人参加予定",
+      "details": "22人参加予定",
       "url": "https://www.meetup.com/tokyo-expat-social-club/events/314844101/",
       "source": "Tokyo Expat Social Club",
       "sourceUrl": "https://www.meetup.com/tokyo-expat-social-club/",
@@ -78,7 +78,7 @@
       "price": "¥1,500",
       "venue": "日比谷公園 噴水広場 (Hibiya Park Fountain Plaza)",
       "location": "日比谷公園 噴水広場 (Hibiya Park Fountain Plaza), 日本、〒100-0012 東京都千代田区日比谷公園１−２, Tokyo, JP",
-      "details": "29人参加予定",
+      "details": "30人参加予定",
       "url": "https://www.meetup.com/tokyo-expat-social-club/events/314890392/",
       "source": "Tokyo Expat Social Club",
       "sourceUrl": "https://www.meetup.com/tokyo-expat-social-club/",
@@ -281,7 +281,7 @@
       "price": "¥3,500 per person (includes racket rental; shoes optional for ¥300)",
       "venue": "Padel Tokyo Mizumachi",
       "location": "1 Chome-32-4 Mukojima, Sumida City, Tokyo 131-0033, Japan, Tokyo, JP",
-      "details": "39人参加予定",
+      "details": "42人参加予定",
       "url": "https://www.meetup.com/tokyo-expat-social-club/events/315438797/",
       "source": "Tokyo Expat Social Club",
       "sourceUrl": "https://www.meetup.com/tokyo-expat-social-club/",
@@ -1167,8 +1167,26 @@
       "sourceColor": "#e67e22",
       "calendarUrl": null,
       "details": null
+    },
+    {
+      "id": "飛地・東京-placeholder",
+      "title": null,
+      "date": null,
+      "dateDisplay": null,
+      "time": null,
+      "price": null,
+      "venue": null,
+      "location": null,
+      "details": null,
+      "url": "https://www.instagram.com/nowhere__tokyo/",
+      "source": "飛地・東京",
+      "sourceUrl": "https://www.instagram.com/nowhere__tokyo/",
+      "sourceColor": "#e1306c",
+      "sourceCategory": "meetup",
+      "calendarUrl": null,
+      "isPlaceholder": true
     }
   ],
   "past": [],
-  "scrapedAt": "2026-07-12T21:40:52.534Z"
+  "scrapedAt": "2026-07-13T02:35:57.000Z"
 }
