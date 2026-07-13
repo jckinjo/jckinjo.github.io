@@ -23,7 +23,6 @@ async function handleEvents(req: Request, res: Response) {
 }
 
 app.get('/api/events', handleEvents);
-app.get('/api/concerts', handleEvents);
 
 app.listen(PORT, () => {
   console.log(`Event Tracker running → http://localhost:${PORT}`);

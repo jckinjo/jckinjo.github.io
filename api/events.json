@@ -154,6 +154,23 @@
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E6%B5%B7%E8%BE%BA%E3%81%AE%E4%B8%80%E6%97%A5%20%EF%BC%94K%E3%83%AA%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC&dates=20260718T121000/20260718T145700&details=%E5%B7%9D%E5%B4%8E%E5%B8%82%E3%82%A2%E3%83%BC%E3%83%88%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E6%98%A0%E5%83%8F%E9%A4%A8%0Ahttps%3A%2F%2Fkawasaki-ac.jp%2Fmovie%2Ftheater%2Fdetail%2Findex.php%3Fid%3D002455&location=%E5%B7%9D%E5%B4%8E%E5%B8%82%E3%82%A2%E3%83%BC%E3%83%88%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E3%82%A2%E3%83%AB%E3%83%86%E3%83%AA%E3%82%AA%E6%98%A0%E5%83%8F%E9%A4%A8&ctz=Asia%2FTokyo"
     },
     {
+      "id": "飛地・東京-2",
+      "title": "這個夏天的第一場讀書會，我們幾乎立刻就決定了要讀哪一本——《臺灣漫遊錄》。",
+      "date": "2026-07-18T05:00:00.000Z",
+      "dateDisplay": "2026.07.18",
+      "time": "14:00",
+      "price": "參加免費但需持書進場",
+      "venue": "東京飛地書店",
+      "location": "東京飛地書店（東京都中野区大和町1-67-6 MTコート 201）",
+      "details": "巧克力 （早稻田大學文學研究科修士在讀 研究題目：殖民地文學/日本語文學） / 12 人",
+      "url": "https://www.instagram.com/p/DaZkUM5R_IK/",
+      "source": "飛地・東京",
+      "sourceUrl": "https://www.instagram.com/nowhere__tokyo/",
+      "sourceColor": "#e1306c",
+      "sourceCategory": "meetup",
+      "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E9%80%99%E5%80%8B%E5%A4%8F%E5%A4%A9%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A0%B4%E8%AE%80%E6%9B%B8%E6%9C%83%EF%BC%8C%E6%88%91%E5%80%91%E5%B9%BE%E4%B9%8E%E7%AB%8B%E5%88%BB%E5%B0%B1%E6%B1%BA%E5%AE%9A%E4%BA%86%E8%A6%81%E8%AE%80%E5%93%AA%E4%B8%80%E6%9C%AC%E2%80%94%E2%80%94%E3%80%8A%E8%87%BA%E7%81%A3%E6%BC%AB%E9%81%8A%E9%8C%84%E3%80%8B%E3%80%82&dates=20260718T140000/20260718T160000&details=%E9%A3%9B%E5%9C%B0%E3%83%BB%E6%9D%B1%E4%BA%AC%0Ahttps%3A%2F%2Fwww.instagram.com%2Fp%2FDaZkUM5R_IK%2F&location=%E6%9D%B1%E4%BA%AC%E9%A3%9B%E5%9C%B0%E6%9B%B8%E5%BA%97%EF%BC%88%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E9%87%8E%E5%8C%BA%E5%A4%A7%E5%92%8C%E7%94%BA1-67-6%20MT%E3%82%B3%E3%83%BC%E3%83%88%20201%EF%BC%89&ctz=Asia%2FTokyo"
+    },
+    {
       "id": "川崎市アートセンター 映像館-4",
       "title": "ヌーヴェルヴァーグ",
       "date": "2026-07-18T06:30:00.000Z",
@@ -281,7 +298,7 @@
       "price": "¥3,500 per person (includes racket rental; shoes optional for ¥300)",
       "venue": "Padel Tokyo Mizumachi",
       "location": "1 Chome-32-4 Mukojima, Sumida City, Tokyo 131-0033, Japan, Tokyo, JP",
-      "details": "42人参加予定",
+      "details": "43人参加予定",
       "url": "https://www.meetup.com/tokyo-expat-social-club/events/315438797/",
       "source": "Tokyo Expat Social Club",
       "sourceUrl": "https://www.meetup.com/tokyo-expat-social-club/",
@@ -331,13 +348,30 @@
       "price": null,
       "venue": "Yoyogi park (Harajuku Gate) 代々木公園（集合場所：原宿門）",
       "location": "Yoyogi park, Tokyo 代々木公園東京都, Tokyo, JP",
-      "details": "3人参加予定",
+      "details": "4人参加予定",
       "url": "https://www.meetup.com/chillruncrew-tokyo/events/310387602/",
       "source": "Chill Run Crew Tokyo",
       "sourceUrl": "https://www.meetup.com/chillruncrew-tokyo/",
       "sourceColor": "#0ea5e9",
       "sourceCategory": "meetup",
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Chill%20Run%20Crew%20Tokyo&dates=20260726T080000/20260726T090000&details=Chill%20Run%20Crew%20Tokyo%0Ahttps%3A%2F%2Fwww.meetup.com%2Fchillruncrew-tokyo%2Fevents%2F310387602%2F&location=Yoyogi%20park%20(Harajuku%20Gate)%20%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92%EF%BC%88%E9%9B%86%E5%90%88%E5%A0%B4%E6%89%80%EF%BC%9A%E5%8E%9F%E5%AE%BF%E9%96%80%EF%BC%89&ctz=Asia%2FTokyo"
+    },
+    {
+      "id": "飛地・東京-1",
+      "title": "楊奎松歷史講座：我是怎麼走上史學研究這條路的？",
+      "date": "2026-07-28T10:00:00.000Z",
+      "dateDisplay": "2026.07.28",
+      "time": "19:00",
+      "price": "1000日圓（入場費可抵扣書款）",
+      "venue": "飛地·東京",
+      "location": "飛地·東京 中野区大和町1-67-6 MTコート 201",
+      "details": "楊奎松 歷史學家",
+      "url": "https://www.instagram.com/p/DajkJOIkVTz/",
+      "source": "飛地・東京",
+      "sourceUrl": "https://www.instagram.com/nowhere__tokyo/",
+      "sourceColor": "#e1306c",
+      "sourceCategory": "meetup",
+      "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E6%A5%8A%E5%A5%8E%E6%9D%BE%E6%AD%B7%E5%8F%B2%E8%AC%9B%E5%BA%A7%EF%BC%9A%E6%88%91%E6%98%AF%E6%80%8E%E9%BA%BC%E8%B5%B0%E4%B8%8A%E5%8F%B2%E5%AD%B8%E7%A0%94%E7%A9%B6%E9%80%99%E6%A2%9D%E8%B7%AF%E7%9A%84%EF%BC%9F&dates=20260728T190000/20260728T210000&details=%E9%A3%9B%E5%9C%B0%E3%83%BB%E6%9D%B1%E4%BA%AC%0Ahttps%3A%2F%2Fwww.instagram.com%2Fp%2FDajkJOIkVTz%2F&location=%E9%A3%9B%E5%9C%B0%C2%B7%E6%9D%B1%E4%BA%AC%20%E4%B8%AD%E9%87%8E%E5%8C%BA%E5%A4%A7%E5%92%8C%E7%94%BA1-67-6%20MT%E3%82%B3%E3%83%BC%E3%83%88%20201&ctz=Asia%2FTokyo"
     },
     {
       "id": "庶民のIPO-2",
@@ -471,6 +505,23 @@
       "sourceColor": "#0ea5e9",
       "sourceCategory": "meetup",
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Chill%20Run%20Crew%20Tokyo&dates=20260809T080000/20260809T090000&details=Chill%20Run%20Crew%20Tokyo%0Ahttps%3A%2F%2Fwww.meetup.com%2Fchillruncrew-tokyo%2Fevents%2F313909878%2F&location=Yoyogi%20park%20(Harajuku%20Gate)%20%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92%EF%BC%88%E9%9B%86%E5%90%88%E5%A0%B4%E6%89%80%EF%BC%9A%E5%8E%9F%E5%AE%BF%E9%96%80%EF%BC%89&ctz=Asia%2FTokyo"
+    },
+    {
+      "id": "飛地・東京-0",
+      "title": "在日本畫漫畫的中國人——ZON 的漫畫分享會",
+      "date": "2026-08-09T06:00:00.000Z",
+      "dateDisplay": "2026.08.09",
+      "time": "15:00",
+      "price": "2000日圓（含最新『ニーハオ、おいしい東京日和』單行本一冊）",
+      "venue": "飛地·東京",
+      "location": "飛地·東京 中野区大和町1-67-6 MTコート 201",
+      "details": "ZON 漫畫家",
+      "url": "https://www.instagram.com/p/DampYB7kSK-/",
+      "source": "飛地・東京",
+      "sourceUrl": "https://www.instagram.com/nowhere__tokyo/",
+      "sourceColor": "#e1306c",
+      "sourceCategory": "meetup",
+      "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E5%9C%A8%E6%97%A5%E6%9C%AC%E7%95%AB%E6%BC%AB%E7%95%AB%E7%9A%84%E4%B8%AD%E5%9C%8B%E4%BA%BA%E2%80%94%E2%80%94ZON%20%E7%9A%84%E6%BC%AB%E7%95%AB%E5%88%86%E4%BA%AB%E6%9C%83&dates=20260809T150000/20260809T170000&details=%E9%A3%9B%E5%9C%B0%E3%83%BB%E6%9D%B1%E4%BA%AC%0Ahttps%3A%2F%2Fwww.instagram.com%2Fp%2FDampYB7kSK-%2F&location=%E9%A3%9B%E5%9C%B0%C2%B7%E6%9D%B1%E4%BA%AC%20%E4%B8%AD%E9%87%8E%E5%8C%BA%E5%A4%A7%E5%92%8C%E7%94%BA1-67-6%20MT%E3%82%B3%E3%83%BC%E3%83%88%20201&ctz=Asia%2FTokyo"
     },
     {
       "id": "バスケットボール日本代表-1",
@@ -1167,26 +1218,8 @@
       "sourceColor": "#e67e22",
       "calendarUrl": null,
       "details": null
-    },
-    {
-      "id": "飛地・東京-placeholder",
-      "title": null,
-      "date": null,
-      "dateDisplay": null,
-      "time": null,
-      "price": null,
-      "venue": null,
-      "location": null,
-      "details": null,
-      "url": "https://www.instagram.com/nowhere__tokyo/",
-      "source": "飛地・東京",
-      "sourceUrl": "https://www.instagram.com/nowhere__tokyo/",
-      "sourceColor": "#e1306c",
-      "sourceCategory": "meetup",
-      "calendarUrl": null,
-      "isPlaceholder": true
     }
   ],
   "past": [],
-  "scrapedAt": "2026-07-13T02:35:57.000Z"
+  "scrapedAt": "2026-07-13T04:16:45.314Z"
 }

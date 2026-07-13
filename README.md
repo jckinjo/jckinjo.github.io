@@ -28,8 +28,6 @@ Open http://localhost:3456
 
 API: `GET /api/events` (use `?refresh=1` to force refresh)
 
-`GET /api/concerts` is kept as a compatibility alias.
-
 ## Static Site
 
 ```bash

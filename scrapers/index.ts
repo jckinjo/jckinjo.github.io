@@ -52,19 +52,25 @@ function clean(str: string | null | undefined): string | null {
   return str.replace(/[\u200b\u200c\u200d\ufeff]/g, '').replace(/\s+/g, ' ').trim();
 }
 
-export async function scrapeAll(forceRefresh = false): Promise<ScrapedData> {
+function fallbackEventsFor(sourceName: string, fallbackData?: ScrapedData): TrackedEvent[] {
+  if (!fallbackData) return [];
+
+  return fallbackData.upcoming
+    .filter((event) => event.source === sourceName && !event.isPlaceholder)
+    .map((event) => ({
+      ...event,
+      // Static JSON stores dates as ISO strings; restore them before sorting.
+      date: event.date ? new Date(event.date as unknown as string) : null,
+    }))
+    .filter((event) => !event.date || !Number.isNaN(event.date.getTime()));
+}
+
+export async function scrapeAll(forceRefresh = false, fallbackData?: ScrapedData): Promise<ScrapedData> {
   if (!forceRefresh && cache && Date.now() < cache.expiresAt) {
     return cache.data;
   }
 
-  const results = await Promise.allSettled(
-    scrapers.map((s) =>
-      s.scrape().catch((err: Error) => {
-        console.error(`[${s.source.name}] scrape failed:`, err.message);
-        return [] as TrackedEvent[];
-      })
-    )
-  );
+  const results = await Promise.allSettled(scrapers.map((s) => s.scrape()));
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -73,7 +79,17 @@ export async function scrapeAll(forceRefresh = false): Promise<ScrapedData> {
 
   results.forEach((result, i) => {
     const scraperMeta = scrapers[i].source;
-    let events: TrackedEvent[] = result.status === 'fulfilled' ? result.value : [];
+    let events: TrackedEvent[];
+    if (result.status === 'fulfilled') {
+      events = result.value;
+    } else {
+      const message = result.reason instanceof Error ? result.reason.message : String(result.reason);
+      events = fallbackEventsFor(scraperMeta.name, fallbackData);
+      console.error(
+        `[${scraperMeta.name}] scrape failed: ${message}` +
+          (events.length ? `; kept ${events.length} cached event(s)` : '')
+      );
+    }
     // Normalize whitespace/zero-width chars in all string fields
     events = events.map(c => ({
       ...c,

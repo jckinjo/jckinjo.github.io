@@ -42,17 +42,16 @@ jobs:
           mkdir -p api
           cp site/index.html index.html
           cp site/api/events.json api/events.json
-          cp site/api/concerts.json api/concerts.json
 
       - name: Commit generated output
         run: |
-          if git diff --quiet -- index.html api/events.json api/concerts.json; then
+          if git diff --quiet -- index.html api/events.json; then
             echo "No generated output changes."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html api/events.json api/concerts.json
+          git add index.html api/events.json
           git commit -m "Update generated event data [skip ci]"
           git push
