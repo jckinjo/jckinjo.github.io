@@ -2,23 +2,6 @@
   "ok": true,
   "upcoming": [
     {
-      "id": "connpass 人気ランキング-6",
-      "title": "第6回 関東Kaggler会",
-      "date": "2026-08-07T03:30:00.000Z",
-      "dateDisplay": "2026.08.07",
-      "time": "12:30",
-      "price": null,
-      "venue": "東京都千代田区霞が関1-3-1 (経済...",
-      "location": "東京都千代田区霞が関1-3-1 (経済...",
-      "details": "ランキング 17位 / 関東Kaggler会 / Kagglerがオフラインで集まれるイベントを関東で開催します！ / 参加 229人",
-      "url": "https://kanto-kaggler.connpass.com/event/397753/",
-      "source": "connpass 人気ランキング",
-      "sourceUrl": "https://connpass.com/ranking/",
-      "sourceColor": "#d9534f",
-      "sourceCategory": "meetup",
-      "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E7%AC%AC6%E5%9B%9E%20%E9%96%A2%E6%9D%B1Kaggler%E4%BC%9A&dates=20260807T123000/20260807T203000&details=connpass%20%E4%BA%BA%E6%B0%97%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%0Ahttps%3A%2F%2Fkanto-kaggler.connpass.com%2Fevent%2F397753%2F&location=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E9%9C%9E%E3%81%8C%E9%96%A21-3-1%20(%E7%B5%8C%E6%B8%88...&ctz=Asia%2FTokyo"
-    },
-    {
       "id": "川崎市アートセンター 映像館-0",
       "title": "原爆資料館 語り継ぐものたち",
       "date": "2026-08-08T01:00:00.000Z",
@@ -128,7 +111,7 @@
       "price": null,
       "venue": "Yoyogi park (Harajuku Gate) 代々木公園（集合場所：原宿門）",
       "location": "Yoyogi park, Tokyo 代々木公園東京都, Tokyo, JP",
-      "details": "45人参加予定",
+      "details": "49人参加予定",
       "url": "https://www.meetup.com/chillruncrew-tokyo/events/313909878/",
       "source": "Chill Run Crew Tokyo",
       "sourceUrl": "https://www.meetup.com/chillruncrew-tokyo/",
@@ -239,7 +222,7 @@
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E6%97%A5%E6%9C%AC%20VS%20%E3%83%A2%E3%83%B3%E3%82%B4%E3%83%AB&dates=20260810T180000/20260810T200000&details=%E3%83%90%E3%82%B9%E3%82%B1%E3%83%83%E3%83%88%E3%83%9C%E3%83%BC%E3%83%AB%E6%97%A5%E6%9C%AC%E4%BB%A3%E8%A1%A8%0Ahttps%3A%2F%2Fspocale.com%2Fsports%2F5%2Fgame%2F354741&location=SAGA%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A&ctz=Asia%2FTokyo"
     },
     {
-      "id": "connpass 人気ランキング-13",
+      "id": "connpass 人気ランキング-12",
       "title": "第7回 OpenArm勉強会",
       "date": "2026-08-10T10:00:00.000Z",
       "dateDisplay": "2026.08.10",
@@ -247,7 +230,7 @@
       "price": null,
       "venue": "〒101-0021 東京都千代田区外神...",
       "location": "〒101-0021 東京都千代田区外神...",
-      "details": "ランキング 44位 / OpenArm / Enactic × SBintuitions × FastLabel共催 / 参加 111/135人",
+      "details": "ランキング 41位 / OpenArm / Enactic × SBintuitions × FastLabel共催 / 参加 116/135人",
       "url": "https://open-arm.connpass.com/event/401524/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
@@ -298,7 +281,7 @@
       "price": "¥1,000",
       "venue": "Kiyosumi Shirakawa Station - A1 Exit",
       "location": "1 Chome-6-13 Shirakawa, Koto City, Tokyo 135-0024, Japan, Tokyo, JP",
-      "details": "24人参加予定",
+      "details": "28人参加予定",
       "url": "https://www.meetup.com/tokyo-expat-social-club/events/315439115/",
       "source": "Tokyo Expat Social Club",
       "sourceUrl": "https://www.meetup.com/tokyo-expat-social-club/",
@@ -349,7 +332,7 @@
       "price": "¥1,200",
       "venue": "Shibakoen Station",
       "location": "4-8-14 Shibakoen, Minato-ku,, Tokyo, JP",
-      "details": "24人参加予定",
+      "details": "26人参加予定",
       "url": "https://www.meetup.com/tokyo-expat-social-club/events/315439294/",
       "source": "Tokyo Expat Social Club",
       "sourceUrl": "https://www.meetup.com/tokyo-expat-social-club/",
@@ -358,7 +341,7 @@
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Tokyo%20Expat%20Picnic%20at%20Shiba%20Park%20%E2%80%94%20Summer%20Sunday%20Social%20%F0%9F%97%BC%F0%9F%8C%BF&dates=20260816T173000/20260816T200000&details=Tokyo%20Expat%20Social%20Club%0Ahttps%3A%2F%2Fwww.meetup.com%2Ftokyo-expat-social-club%2Fevents%2F315439294%2F&location=Shibakoen%20Station&ctz=Asia%2FTokyo"
     },
     {
-      "id": "connpass 人気ランキング-2",
+      "id": "connpass 人気ランキング-4",
       "title": "【増枠】【ABEJA × 川崎重工 × 松尾研究所】Physical AI 実践勉強会",
       "date": "2026-08-18T09:00:00.000Z",
       "dateDisplay": "2026.08.18",
@@ -366,7 +349,7 @@
       "price": null,
       "venue": "東京都港区芝5-31-19 ラウンドク...",
       "location": "東京都港区芝5-31-19 ラウンドク...",
-      "details": "ランキング 13位 / ABEJA Innovation Meetup / 参加 243/210人",
+      "details": "ランキング 15位 / ABEJA Innovation Meetup / 参加 246/210人",
       "url": "https://abeja-innovation-meetup.connpass.com/event/399848/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
@@ -375,7 +358,7 @@
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E3%80%90%E5%A2%97%E6%9E%A0%E3%80%91%E3%80%90ABEJA%20%C3%97%20%E5%B7%9D%E5%B4%8E%E9%87%8D%E5%B7%A5%20%C3%97%20%E6%9D%BE%E5%B0%BE%E7%A0%94%E7%A9%B6%E6%89%80%E3%80%91Physical%20AI%20%E5%AE%9F%E8%B7%B5%E5%8B%89%E5%BC%B7%E4%BC%9A&dates=20260818T180000/20260818T210000&details=connpass%20%E4%BA%BA%E6%B0%97%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%0Ahttps%3A%2F%2Fabeja-innovation-meetup.connpass.com%2Fevent%2F399848%2F&location=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D5-31-19%20%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89%E3%82%AF...&ctz=Asia%2FTokyo"
     },
     {
-      "id": "connpass 人気ランキング-0",
+      "id": "connpass 人気ランキング-1",
       "title": "【増枠！】AI自走環境整備・運用スペシャル #5 〜ハーネス・ループ・グラフエンジニアリング〜",
       "date": "2026-08-20T10:00:00.000Z",
       "dateDisplay": "2026.08.20",
@@ -383,7 +366,7 @@
       "price": null,
       "venue": "〒101-0062 東京都千代田区神田...",
       "location": "〒101-0062 東京都千代田区神田...",
-      "details": "ランキング 4位 / AI駆動開発(AI-Driven Development) / 開発組織はどこまでAI自走度を品質を保って促進できるのか？実践知見を語り尽くす！ / 参加 447/803人",
+      "details": "ランキング 5位 / AI駆動開発(AI-Driven Development) / 開発組織はどこまでAI自走度を品質を保って促進できるのか？実践知見を語り尽くす！ / 参加 477/803人",
       "url": "https://aid.connpass.com/event/402230/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
@@ -440,7 +423,7 @@
       "details": null
     },
     {
-      "id": "connpass 人気ランキング-4",
+      "id": "connpass 人気ランキング-5",
       "title": "Kernel/VM探検隊@東京 No19",
       "date": "2026-08-22T00:30:00.000Z",
       "dateDisplay": "2026.08.22",
@@ -448,13 +431,30 @@
       "price": null,
       "venue": "東京都千代田区富士見2-10-2 (飯...",
       "location": "東京都千代田区富士見2-10-2 (飯...",
-      "details": "ランキング 15位 / カーネル／VM探検隊 / 参加 240/65716人",
+      "details": "ランキング 17位 / カーネル／VM探検隊 / 参加 241/65716人",
       "url": "https://kernelvm.connpass.com/event/395390/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
       "sourceColor": "#d9534f",
       "sourceCategory": "meetup",
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Kernel%2FVM%E6%8E%A2%E6%A4%9C%E9%9A%8A%40%E6%9D%B1%E4%BA%AC%20No19&dates=20260822T093000/20260822T180000&details=connpass%20%E4%BA%BA%E6%B0%97%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%0Ahttps%3A%2F%2Fkernelvm.connpass.com%2Fevent%2F395390%2F&location=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E5%AF%8C%E5%A3%AB%E8%A6%8B2-10-2%20(%E9%A3%AF...&ctz=Asia%2FTokyo"
+    },
+    {
+      "id": "connpass 人気ランキング-13",
+      "title": "JANOG58 NOC Technical Meeting",
+      "date": "2026-08-22T04:00:00.000Z",
+      "dateDisplay": "2026.08.22",
+      "time": "13:00",
+      "price": null,
+      "venue": "〒150-6136 東京都渋谷区渋谷2...",
+      "location": "〒150-6136 東京都渋谷区渋谷2...",
+      "details": "ランキング 42位 / ネットワークエンジニア必見！JANOG58を支えたインフラ技術の全貌 / 参加 114/325人",
+      "url": "https://connpass.com/event/402655/",
+      "source": "connpass 人気ランキング",
+      "sourceUrl": "https://connpass.com/ranking/",
+      "sourceColor": "#d9534f",
+      "sourceCategory": "meetup",
+      "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=JANOG58%20NOC%20Technical%20Meeting&dates=20260822T130000/20260822T193000&details=connpass%20%E4%BA%BA%E6%B0%97%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%0Ahttps%3A%2F%2Fconnpass.com%2Fevent%2F402655%2F&location=%E3%80%92150-6136%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B72...&ctz=Asia%2FTokyo"
     },
     {
       "id": "DEPAPEPE-5",
@@ -490,7 +490,7 @@
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Chill%20Run%20Crew%20Tokyo&dates=20260823T080000/20260823T090000&details=Chill%20Run%20Crew%20Tokyo%0Ahttps%3A%2F%2Fwww.meetup.com%2Fchillruncrew-tokyo%2Fevents%2F310387608%2F&location=Yoyogi%20park%20(Harajuku%20Gate)%20%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92%EF%BC%88%E9%9B%86%E5%90%88%E5%A0%B4%E6%89%80%EF%BC%9A%E5%8E%9F%E5%AE%BF%E9%96%80%EF%BC%89&ctz=Asia%2FTokyo"
     },
     {
-      "id": "connpass 人気ランキング-12",
+      "id": "connpass 人気ランキング-8",
       "title": "AIオブザーバビリティ スペシャル#3",
       "date": "2026-08-25T10:00:00.000Z",
       "dateDisplay": "2026.08.25",
@@ -498,7 +498,7 @@
       "price": null,
       "venue": "東京都品川区大崎1丁目2−2（アートヴ...",
       "location": "東京都品川区大崎1丁目2−2（アートヴ...",
-      "details": "ランキング 42位 / AI駆動開発(AI-Driven Development) / AI活用が進むほど膨らむコストの可視化〜消費効率改善に向き合う実践知に迫る！ / 参加 124/354人",
+      "details": "ランキング 30位 / AI駆動開発(AI-Driven Development) / AI活用が進むほど膨らむコストの可視化〜消費効率改善に向き合う実践知に迫る！ / 参加 156/334人",
       "url": "https://aid.connpass.com/event/402694/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
@@ -523,7 +523,7 @@
       "details": null
     },
     {
-      "id": "connpass 人気ランキング-5",
+      "id": "connpass 人気ランキング-0",
       "title": "Cloudflare Workers Tech Talks in Tokyo #8",
       "date": "2026-08-27T06:00:00.000Z",
       "dateDisplay": "2026.08.27",
@@ -531,13 +531,30 @@
       "price": null,
       "venue": "東京都中央区京橋1丁目7-1 TODA...",
       "location": "東京都中央区京橋1丁目7-1 TODA...",
-      "details": "ランキング 16位 / Cloudflare Workers Tech Talks / 開発者のためのCloudflare Workersテックトーク / 参加 232/220人",
+      "details": "ランキング 4位 / Cloudflare Workers Tech Talks / 開発者のためのCloudflare Workersテックトーク / 参加 481/280人",
       "url": "https://workers-tech.connpass.com/event/400818/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
       "sourceColor": "#d9534f",
       "sourceCategory": "meetup",
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Cloudflare%20Workers%20Tech%20Talks%20in%20Tokyo%20%238&dates=20260827T150000/20260827T170000&details=connpass%20%E4%BA%BA%E6%B0%97%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%0Ahttps%3A%2F%2Fworkers-tech.connpass.com%2Fevent%2F400818%2F&location=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%BA%AC%E6%A9%8B1%E4%B8%81%E7%9B%AE7-1%20TODA...&ctz=Asia%2FTokyo"
+    },
+    {
+      "id": "connpass 人気ランキング-15",
+      "title": "JAWS-UG AI-DLC #02：AI-DLC勉強会",
+      "date": "2026-08-27T10:00:00.000Z",
+      "dateDisplay": "2026.08.27",
+      "time": "19:00",
+      "price": null,
+      "venue": "〒106-0041 東京都港区麻布台一...",
+      "location": "〒106-0041 東京都港区麻布台一...",
+      "details": "ランキング 50位 / JAWS-UG AI-DLC / 参加 101人",
+      "url": "https://jawsug-aidlc.connpass.com/event/401571/",
+      "source": "connpass 人気ランキング",
+      "sourceUrl": "https://connpass.com/ranking/",
+      "sourceColor": "#d9534f",
+      "sourceCategory": "meetup",
+      "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=JAWS-UG%20AI-DLC%20%2302%EF%BC%9AAI-DLC%E5%8B%89%E5%BC%B7%E4%BC%9A&dates=20260827T190000/20260827T210000&details=connpass%20%E4%BA%BA%E6%B0%97%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%0Ahttps%3A%2F%2Fjawsug-aidlc.connpass.com%2Fevent%2F401571%2F&location=%E3%80%92106-0041%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E9%BA%BB%E5%B8%83%E5%8F%B0%E4%B8%80...&ctz=Asia%2FTokyo"
     },
     {
       "id": "GOGO SATOSHI-6",
@@ -663,13 +680,30 @@
       "price": null,
       "venue": "東京都千代田区丸の内一丁目5番1号",
       "location": "東京都千代田区丸の内一丁目5番1号",
-      "details": "ランキング 35位 / JEDAI - Japan Databricks User Group / 今回は電力・ガスなどエネルギー業界の特集回！ Databricks新オフィスからお届けします。 / 参加 144/370人",
+      "details": "ランキング 30位 / JEDAI - Japan Databricks User Group / 今回は電力・ガスなどエネルギー業界の特集回！ Databricks新オフィスからお届けします。 / 参加 156/370人",
       "url": "https://jedai.connpass.com/event/399443/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
       "sourceColor": "#d9534f",
       "sourceCategory": "meetup",
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=JEDAI%20Meetup!%20%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AE%E3%83%BC%E6%A5%AD%E7%95%8C%E3%81%AEAI%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E6%B4%BB%E7%94%A8%E4%BA%8B%E4%BE%8B%20vol.2&dates=20260901T183000/20260901T203000&details=connpass%20%E4%BA%BA%E6%B0%97%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%0Ahttps%3A%2F%2Fjedai.connpass.com%2Fevent%2F399443%2F&location=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%85%E4%B8%80%E4%B8%81%E7%9B%AE5%E7%95%AA1%E5%8F%B7&ctz=Asia%2FTokyo"
+    },
+    {
+      "id": "connpass 人気ランキング-14",
+      "title": "W3C Japan 30 周年記念イベント - Web Together",
+      "date": "2026-09-04T09:30:00.000Z",
+      "dateDisplay": "2026.09.04",
+      "time": "18:30",
+      "price": null,
+      "venue": "東京都中央区日本橋2-7-1 東京日本...",
+      "location": "東京都中央区日本橋2-7-1 東京日本...",
+      "details": "ランキング 48位 / W3C Japan / W3C 30年の感謝と未来へ / 参加 102/100人",
+      "url": "https://w3c-japan.connpass.com/event/402633/",
+      "source": "connpass 人気ランキング",
+      "sourceUrl": "https://connpass.com/ranking/",
+      "sourceColor": "#d9534f",
+      "sourceCategory": "meetup",
+      "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=W3C%20Japan%2030%20%E5%91%A8%E5%B9%B4%E8%A8%98%E5%BF%B5%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%20-%20Web%20Together&dates=20260904T183000/20260904T210000&details=connpass%20%E4%BA%BA%E6%B0%97%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%0Ahttps%3A%2F%2Fw3c-japan.connpass.com%2Fevent%2F402633%2F&location=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%97%A5%E6%9C%AC%E6%A9%8B2-7-1%20%E6%9D%B1%E4%BA%AC%E6%97%A5%E6%9C%AC...&ctz=Asia%2FTokyo"
     },
     {
       "id": "connpass 人気ランキング-10",
@@ -680,7 +714,7 @@
       "price": null,
       "venue": "東京都渋谷区3-21-3 渋谷ストリーム5F",
       "location": "東京都渋谷区3-21-3 渋谷ストリーム5F",
-      "details": "ランキング 37位 / クラスメソッド株式会社 / 第５回 Agentic AI Hackathonのスピンオフイベントです / 参加 140/140人",
+      "details": "ランキング 34位 / クラスメソッド株式会社 / 第５回 Agentic AI Hackathonのスピンオフイベントです / 参加 148/150人",
       "url": "https://classmethod.connpass.com/event/398578/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
@@ -722,7 +756,7 @@
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Chill%20Run%20Crew%20Tokyo&dates=20260906T080000/20260906T090000&details=Chill%20Run%20Crew%20Tokyo%0Ahttps%3A%2F%2Fwww.meetup.com%2Fchillruncrew-tokyo%2Fevents%2F313909879%2F&location=Yoyogi%20park%20(Harajuku%20Gate)%20%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92%EF%BC%88%E9%9B%86%E5%90%88%E5%A0%B4%E6%89%80%EF%BC%9A%E5%8E%9F%E5%AE%BF%E9%96%80%EF%BC%89&ctz=Asia%2FTokyo"
     },
     {
-      "id": "connpass 人気ランキング-1",
+      "id": "connpass 人気ランキング-2",
       "title": "AI時代のソフトウェアエンジニアリングを再定義する夜",
       "date": "2026-09-07T10:00:00.000Z",
       "dateDisplay": "2026.09.07",
@@ -730,7 +764,7 @@
       "price": null,
       "venue": "〒108-0073 東京都港区三田３丁...",
       "location": "〒108-0073 東京都港区三田３丁...",
-      "details": "ランキング 9位 / 株式会社ログラス / Loglass AI TALK vol.8 / 参加 318/365人",
+      "details": "ランキング 10位 / 株式会社ログラス / Loglass AI TALK vol.8 / 参加 331/365人",
       "url": "https://loglass-tech.connpass.com/event/398560/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
@@ -747,7 +781,7 @@
       "price": null,
       "venue": "東京都品川区西五反田8-4-13 五反...",
       "location": "東京都品川区西五反田8-4-13 五反...",
-      "details": "ランキング 14位 / Qiita / t-wadaさん、吉羽 龍太郎さん登壇決定！ 9/10（木）シティホール＆ギャラリー五反田で開催！ / 参加 241/270人",
+      "details": "ランキング 14位 / Qiita / t-wadaさん、吉羽 龍太郎さん登壇決定！ 9/10（木）シティホール＆ギャラリー五反田で開催！ / 参加 254/300人",
       "url": "https://increments.connpass.com/event/397622/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
@@ -772,7 +806,7 @@
       "details": null
     },
     {
-      "id": "connpass 人気ランキング-8",
+      "id": "connpass 人気ランキング-6",
       "title": "データ界隈LT祭【第1回】～熱量や面白さを3分間に凝縮するLT祭～",
       "date": "2026-09-15T10:00:00.000Z",
       "dateDisplay": "2026.09.15",
@@ -780,29 +814,13 @@
       "price": null,
       "venue": "東京都品川区大崎1-5-1 大崎センタ...",
       "location": "東京都品川区大崎1-5-1 大崎センタ...",
-      "details": "ランキング 31位 / データ横丁 / 3年後には登壇者1,000人の祝祭へ / 参加 152人",
+      "details": "ランキング 26位 / データ横丁 / 3年後には登壇者1,000人の祝祭へ / 参加 159人",
       "url": "https://datayokocho.connpass.com/event/393250/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
       "sourceColor": "#d9534f",
       "sourceCategory": "meetup",
       "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E3%83%87%E3%83%BC%E3%82%BF%E7%95%8C%E9%9A%88LT%E7%A5%AD%E3%80%90%E7%AC%AC1%E5%9B%9E%E3%80%91%EF%BD%9E%E7%86%B1%E9%87%8F%E3%82%84%E9%9D%A2%E7%99%BD%E3%81%95%E3%82%923%E5%88%86%E9%96%93%E3%81%AB%E5%87%9D%E7%B8%AE%E3%81%99%E3%82%8BLT%E7%A5%AD%EF%BD%9E&dates=20260915T190000/20260915T213000&details=connpass%20%E4%BA%BA%E6%B0%97%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%0Ahttps%3A%2F%2Fdatayokocho.connpass.com%2Fevent%2F393250%2F&location=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E5%A4%A7%E5%B4%8E1-5-1%20%E5%A4%A7%E5%B4%8E%E3%82%BB%E3%83%B3%E3%82%BF...&ctz=Asia%2FTokyo"
-    },
-    {
-      "id": "DEPAPEPE-4",
-      "title": "「DEPAPEPE FANCLUB TOUR “Acoustic Friends”」",
-      "date": "2026-09-15T15:00:00.000Z",
-      "dateDisplay": "",
-      "time": "19:00",
-      "price": "6000円",
-      "venue": null,
-      "location": null,
-      "url": "https://rainbow-e.co.jp/depapepe/live/4843/",
-      "source": "DEPAPEPE",
-      "sourceUrl": "https://rainbow-e.co.jp/depapepe/live/",
-      "sourceColor": "#e67e22",
-      "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E3%80%8CDEPAPEPE%20FANCLUB%20TOUR%20%E2%80%9CAcoustic%20Friends%E2%80%9D%E3%80%8D&dates=20260916T190000/20260916T210000&details=DEPAPEPE%0Ahttps%3A%2F%2Frainbow-e.co.jp%2Fdepapepe%2Flive%2F4843%2F&location=&ctz=Asia%2FTokyo",
-      "details": null
     },
     {
       "id": "GOGO SATOSHI-1",
@@ -829,7 +847,7 @@
       "price": null,
       "venue": "東京都渋谷区千駄ヶ谷5-31-11 (...",
       "location": "東京都渋谷区千駄ヶ谷5-31-11 (...",
-      "details": "ランキング 29位 / Serverless / サーバーレスアーキテクチャやAIエージェントプラットフォームまで盛り沢山の2日間！！！ / 参加 156人",
+      "details": "ランキング 28位 / Serverless / サーバーレスアーキテクチャやAIエージェントプラットフォームまで盛り沢山の2日間！！！ / 参加 158人",
       "url": "https://serverless.connpass.com/event/371637/",
       "source": "connpass 人気ランキング",
       "sourceUrl": "https://connpass.com/ranking/",
@@ -1304,6 +1322,22 @@
       "details": null
     },
     {
+      "id": "DEPAPEPE-4",
+      "title": "「DEPAPEPE FANCLUB TOUR “Acoustic Friends”」",
+      "date": null,
+      "dateDisplay": "",
+      "time": null,
+      "price": null,
+      "venue": null,
+      "location": null,
+      "url": "https://rainbow-e.co.jp/depapepe/live/4843/",
+      "source": "DEPAPEPE",
+      "sourceUrl": "https://rainbow-e.co.jp/depapepe/live/",
+      "sourceColor": "#e67e22",
+      "calendarUrl": null,
+      "details": null
+    },
+    {
       "id": "DEPAPEPE-6",
       "title": "「三浦★順2026」",
       "date": null,
@@ -1339,5 +1373,5 @@
     }
   ],
   "past": [],
-  "scrapedAt": "2026-08-07T00:59:53.323Z"
+  "scrapedAt": "2026-08-07T21:29:47.867Z"
 }
